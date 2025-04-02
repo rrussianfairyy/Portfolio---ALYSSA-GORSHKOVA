@@ -1,0 +1,225 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#particles-js {
+    position: fixed; /* Fixed background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind other content */
+}
+body {
+    background-color: #F2F2F2; /* Light grey background */
+    min-height: 220vh; /* Makes the page twice the viewport height */
+}
+
+/* Customizable Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+/* Header opacity animation */
+@keyframes fadeHeader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5; /* Adjust this for opacity when scrolling */
+    }
+}
+
+header.sticky {
+    animation: fadeHeader 0.3s forwards;
+}
+
+/* Customizable Header Text */
+.name {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C59CA;
+    text-decoration: none;
+}
+
+/* Customizable Navigation */
+.nav-link {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: #2C59CA;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.projects-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130px; /* Huge text */
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 100px; /* Adjust top spacing */
+    margin-bottom: 100px; /* Adjust spacing below it */
+    color: #2C59CA
+}
+
+/* Fully Customizable Text */
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: -100px;
+    margin-bottom: 15px; /* Adjust spacing below */
+    color: #2C59CA
+}
+
+
+.description {
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    line-height: 1.5; /* Adjust spacing between lines */
+    color: #2C59CA
+}
+
+/* Customizable Image */
+.image-placeholder {
+    width: 750px; /* Width of the div */
+    height: 700px; /* Height of the div */
+    position: absolute;
+    right: 71px;
+    top: 125px;
+    z-index: 10; /* Puts it behind everything else */
+}
+
+.image-placeholder img {
+    width: 100%; /* Makes the image fill the div */
+    height: 100%; /* Makes the image fill the div */
+    object-fit: cover; /* Ensures the image covers the div without stretching */
+}
+
+
+.projects2-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130px; /* Huge text */
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 180px; /* Adjust top spacing */
+    margin-bottom: 100px; /* Adjust spacing below it */
+    color: #2C59CA
+}
+
+/* Fully Customizable Text */
+.subtitle2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: -100px;
+    margin-bottom: 15px; /* Adjust spacing below */
+    color: #2C59CA
+}
+
+
+.description2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: 340px;
+    margin-bottom: 40px;
+    line-height: 1.5; /* Adjust spacing between lines */
+    color: #2C59CA
+}
+
+/* Customizable Image */
+.image-placeholder2 {
+    width: 750px; /* Width of the div */
+    height: 700px; /* Height of the div */
+    position: absolute;
+    right: 71px;
+    top: 903px;
+    z-index: 10; /* Puts it behind everything else */
+}
+
+.image-placeholder2 img {
+    width: 100%; /* Makes the image fill the div */
+    height: 100%; /* Makes the image fill the div */
+    object-fit: cover; /* Ensures the image covers the div without stretching */
+}
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+video {
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#playPauseBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Fix here */
+}
+
+
+
+/* Contact Details Styling */
+.contact-details {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    color: #2C59CA;
+   margin-top: 60px;
+   margin-left: 55px;
+}
+/* Footer Section */
+.footer {
+    width: auto;
+    padding: 20px;
+    text-align: left; 
+    z-index: 10;
+}
+
+/* Styling for Footer Links */
+.contact-details a {
+    color: #2C59CA;
+    text-decoration: none;
+    margin-left:0px; /* Space between links */
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}

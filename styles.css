@@ -1,0 +1,205 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2; /* Light grey background */
+    min-height: 280vh;
+    position: relative;
+}
+
+/* Particles Background */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures particles stay behind everything else */
+}
+
+/* Customizable Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* More spacing */
+    z-index: 100;
+    
+}
+
+/* Customizable Header Text */
+.name {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px; /* You can change this */
+    font-weight: bold;
+    color: #2C59CA;
+    text-decoration: none;
+}
+
+/* Customizable Navigation */
+.nav-link {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px; /* You can change this */
+    color: #2C59CA;
+    text-decoration: none;
+    margin-left: 30px; /* Spacing between links */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.portfolio-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 293px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #2C59CA;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.portfolio-title:hover {
+    color: #4f18cf; /* Change the color when hovering */
+}
+
+
+/* Fully Customizable Text */
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: -130px;
+    margin-bottom: 15px;
+    color: #2C59CA;
+}
+
+.email {
+    font-family: Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #2C59CA;
+}
+
+.description {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    margin-left: 66px;
+    margin-top:280px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #2C59CA;
+}
+
+/* Customizable Image */
+.image-placeholder {
+    width: 838.5px;
+    height: 875px;
+    position: absolute;
+    right: 71px;
+    top: 145px;
+    z-index: -1;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel Section */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    width: 1650px;
+    margin-top: 150px;
+    margin-left: 66px;
+    overflow: hidden;
+}
+
+.carousel-video {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Section */
+.footer {
+    width: auto;
+    padding: 20px;
+    text-align: left;
+    z-index: 10;
+}
+
+.contact-details {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    color: #2C59CA;
+    margin-top: 60px;
+    margin-left: 55px;
+}
+
+.contact-details a {
+    color: #2C59CA;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Particles Background */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensures particles stay behind everything else */
+    background-color: transparent; /* Ensures it's transparent */
+}
+
+/* Projects Section */
+#projects {
+    margin-top: 100px;
+}
+
+/* Styling for Links in the Footer */
+.footer a {
+    color: #2C59CA;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

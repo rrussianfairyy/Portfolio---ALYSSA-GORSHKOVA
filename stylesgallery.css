@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#particles-js {
+    position: fixed; /* Fix it in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Use viewport height to ensure it covers the entire screen */
+    z-index: -1; /* Ensure particles stay behind everything else */
+}
+
+
+/* Body Styling */
+body {
+    background-color: #F2F2F2; /* Light grey background */
+    font-family: Arial, sans-serif; /* Default font for the body */
+    padding-top: 120px; /* Make room for fixed header */
+    min-height: 100vh; /* Ensure the body height covers the full viewport */
+}
+
+/* Customizable Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* More spacing */
+    z-index: 100;
+    
+}
+
+/* Customizable Header Text */
+.name {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px; /* You can change this */
+    font-weight: bold;
+    color: #2C59CA;
+    text-decoration: none;
+}
+
+/* Customizable Navigation */
+.nav-link {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px; /* You can change this */
+    color: #2C59CA;
+    text-decoration: none;
+    margin-left: 30px; /* Spacing between links */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Title */
+.gallery-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130px; /* Huge text */
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 0px; /* Adjust top spacing */
+    margin-bottom: 50px; /* Adjust spacing below it */
+    color: #2C59CA;
+}
+
+/* Subtitle */
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: -40px; /* Adjust spacing below title */
+    margin-bottom: 30px; /* Adjust spacing below */
+    color: #2C59CA;
+}
+
+/* Gallery Section Styling */
+.user-photos {
+    column-count: 4; /* 4 items per row */
+    column-gap: 20px; /* Space between columns */
+    width: 90%;
+    margin: auto;
+}
+
+.photo {
+    display: inline-block; /* Ensures content flows within columns */
+    width: 100%;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.photo img, .photo video {
+    width: 100%; /* Full width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure videos behave like images */
+.photo video {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .user-photos {
+        column-count: 3; /* 3 per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .user-photos {
+        column-count: 2; /* 2 per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-photos {
+        column-count: 1; /* 1 per row on phones */
+    }
+}
+
+
+/* Footer Section */
+.footer {
+    width: auto;
+    padding: 20px;
+    text-align: left; 
+    z-index: 10;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    color: #2C59CA;
+   margin-top: 60px;
+   margin-left: 55px;
+}
+
+/* Styling for Footer Links */
+.contact-details a {
+    color: #2C59CA;
+    text-decoration: none;
+    margin-left:0px; /* Space between links */
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
